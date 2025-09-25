@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Colombel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Zone gauche -->
+            <div class="left">
+                <img src="https://picsum.photos/100" alt="Profile picture" class="circle responsive-img avatar">
+                <div class="identity">
+                    <h1>Sara Colombel</h1>
+                    <h2>Étudiante Epitech en IA</h2>
+                </div>
+            </div>
+
+            <!-- Zone milieu -->
+            <div class="center">
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Zone droite -->
+            <div class="right">
+                <a href="https://github.com/ColombelSara" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/sara-colombel-devweb" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:saracolombel.pro@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="burger">☰</div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+            <div class="mobile-icons">
+                <a href="https://github.com/SaraColombel" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/sara-colombel-devweb" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:saracolombel.pro@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        burger.addEventListener('click', () => {
+            mobileMenu.style.display =
+            mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer=""></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

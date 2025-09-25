@@ -1,0 +1,135 @@
+body{
+    background-color: #1E1E1E;
+}
+
+.navbar{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #252525;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+nav{
+    height: auto !important;
+    line-height: normal;
+    padding: 10px 20px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.identity h1 {
+    font-size: 1.4rem;
+    color: #F5F5F5;
+    margin: 0;
+}
+
+.identity h2 {
+    font-size: 0.9rem;
+    color: #CCCCCC;
+    margin: 0;
+}
+
+.center a {
+    margin: 0 12px;
+    color: #CCCCCC;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+.center a:hover {
+    color: #9B59B6;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right i {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right i::before {
+    vertical-align: middle;
+}
+
+.right a:hover {
+    color: #9B59B6;
+}
+
+/* Desktop */
+.burger, .mobile-menu {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .center, .right {
+    display: none;
+    }
+
+    .burger {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: #252525;
+        padding: 20px;
+        position: absolute;
+        top: 97px;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .mobile-menu a {
+    color: #F5F5F5;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    }
+
+    .mobile-icons{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .mobile-icons a{
+        font-size: 20px;
+    }
+}
