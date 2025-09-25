@@ -54,15 +54,110 @@
         </div>
     </header>
 
-    <script>
-        const burger = document.querySelector('.burger');
-        const mobileMenu = document.querySelector('.mobile-menu');
+    <div class="sections-container" id="sections">
+        <section class="section about">
+            <div id="about">
+                <h4>À propos</h4>
+                <p class="about-text">
+                    Je m’appelle Sara Colombel. Après un Bac+2 en développement web, j’ai rejoint Epitech Toulouse pour un parcours Bac+5 axé logiciel, où l’on consolide les bases (Python, Web, C…) avant une spécialisation IA en dernière année.<br><br>
 
-        burger.addEventListener('click', () => {
-            mobileMenu.style.display =
-            mobileMenu.style.display === 'flex' ? 'none' : 'flex';
-        });
-    </script>
+                    Ce que j’aime : partir d’un besoin réel, décomposer le problème, livrer une solution claire et mesurable. J’ai un fort intérêt pour l’IA appliquée (classification, automatisation, exploration de données) et j’apprécie les bonnes pratiques : versionning, lisibilité, petites itérations testables.<br><br>
+
+                    À partir de fin décembre 2025, je rejoins CIMPA (Toulouse, aéronautique) en alternance de 2 ans et demi sur des missions IA. Mon objectif : apprendre vite, m’intégrer à une équipe exigeante et livrer des briques utiles en production.<br><br>
+
+                    En dehors du code, je fais de la musique (violon depuis une dizaine d'années) et la création de projets concrets (web, impression 3D, etc.), ce qui nourrit mon sens pratique.
+                </p>
+            </div>
+        </section>
+
+        <section class="section skills-section">
+            <div id="skills">
+                <h4>Compétences</h4>
+                <h5>Langages</h5>
+                <ul class="skills first-list">
+                    <li>
+                        <span>HTML/CSS</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>JavaScript</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>Python</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>SQL</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>PHP</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>JavaScript</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>C / C++</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%"></div>
+                        </div>
+                    </li>
+                </ul>
+                <h5>Frameworks & Librairies</h5>
+                <ul class="skills">
+                    <li>
+                        <span>Angular</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>React</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>Materialize</span>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="pagination-dots" id="dots">
+        <span data-index="0" class="dot active"></span>
+        <span data-index="1" class="dot"></span>
+        <span data-index="2" class="dot"></span>
+        <span data-index="3" class="dot"></span>
+        <span data-index="4" class="dot"></span>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer=""></script>
     <script src="script.js" defer></script>
