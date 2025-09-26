@@ -37,127 +37,191 @@
                 <a href="mailto:saracolombel.pro@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
 
-            <div class="burger">☰</div>
-        </nav>
+            <label for="burger-toggle" class="burger">☰</label>
+            <input type="checkbox" id="burger-toggle" hidden>
 
-        <div class="mobile-menu">
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#parcours">Parcours</a>
-            <a href="#projects">Projets</a>
-            <a href="#contact">Contact</a>
-            <div class="mobile-icons">
-                <a href="https://github.com/SaraColombel" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/sara-colombel-devweb" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:saracolombel.pro@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <div class="mobile-menu">
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+                <div class="mobile-icons">
+                    <a href="https://github.com/SaraColombel" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sara-colombel-devweb" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:saracolombel.pro@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <div class="sections-container" id="sections">
-        <section class="section about">
-            <div id="about">
-                <h4>À propos</h4>
-                <p class="about-text">
-                    Je m’appelle Sara Colombel. Après un Bac+2 en développement web, j’ai rejoint Epitech Toulouse pour un parcours Bac+5 axé logiciel, où l’on consolide les bases (Python, Web, C…) avant une spécialisation IA en dernière année.<br><br>
+    <div class="body" id="slider-wrapper">
+        <input type="radio" name="slider" id="slider0" checked>
+        <input type="radio" name="slider" id="slider1">
+        <input type="radio" name="slider" id="slider2">
+        <input type="radio" name="slider" id="slider3">
+        <input type="radio" name="slider" id="slider4">
 
-                    Ce que j’aime : partir d’un besoin réel, décomposer le problème, livrer une solution claire et mesurable. J’ai un fort intérêt pour l’IA appliquée (classification, automatisation, exploration de données) et j’apprécie les bonnes pratiques : versionning, lisibilité, petites itérations testables.<br><br>
 
-                    À partir de fin décembre 2025, je rejoins CIMPA (Toulouse, aéronautique) en alternance de 2 ans et demi sur des missions IA. Mon objectif : apprendre vite, m’intégrer à une équipe exigeante et livrer des briques utiles en production.<br><br>
+        <div class="sections-container" id="sections">
+            <section class="section about" id="about">
+                <div id="about">
+                    <h4>À propos</h4>
+                    <p class="about-text">
+                        Je m’appelle Sara Colombel. Après un Bac+2 en développement web, j’ai rejoint Epitech Toulouse pour un parcours Bac+5 axé logiciel, où l’on consolide les bases (Python, Web, C…) avant une spécialisation IA en dernière année.<br><br>
 
-                    En dehors du code, je fais de la musique (violon depuis une dizaine d'années) et la création de projets concrets (web, impression 3D, etc.), ce qui nourrit mon sens pratique.
-                </p>
-            </div>
-        </section>
+                        Ce que j’aime : partir d’un besoin réel, décomposer le problème, livrer une solution claire et mesurable. J’ai un fort intérêt pour l’IA appliquée (classification, automatisation, exploration de données) et j’apprécie les bonnes pratiques : versionning, lisibilité, petites itérations testables.<br><br>
 
-        <section class="section skills-section">
-            <div id="skills">
-                <h4>Compétences</h4>
-                <h5>Langages</h5>
-                <ul class="skills first-list">
-                    <li>
-                        <span>HTML/CSS</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 90%"></div>
+                        À partir de fin décembre 2025, je rejoins CIMPA (Toulouse, aéronautique) en alternance de 2 ans et demi sur des missions IA. Mon objectif : apprendre vite, m’intégrer à une équipe exigeante et livrer des briques utiles en production.<br><br>
+
+                        En dehors du code, je fais de la musique (violon depuis une dizaine d'années) et la création de projets concrets (web, impression 3D, etc.), ce qui nourrit mon sens pratique.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section skills-section" id="skills-section">
+                <div id="skills">
+                    <h4>Compétences</h4>
+                    <div class="skills-columns">
+                        <div class="col1">
+                            <h5>Langages</h5>
+                            <ul class="skills first-list">
+                                <li>
+                                    <span>HTML/CSS</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 90%"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>JavaScript</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 80%"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>Python</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 70%"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>SQL</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 50%"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>PHP</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 40%"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>JavaScript</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 20%"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span>C / C++</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 10%"></div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
 
-                    <li>
-                        <span>JavaScript</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 80%"></div>
-                        </div>
-                    </li>
+                        <div class="col2">
+                            <h5>Frameworks & Librairies</h5>
+                            <ul class="skills">
+                                <li>
+                                    <span>Angular</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 60%"></div>
+                                    </div>
+                                </li>
 
-                    <li>
-                        <span>Python</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 70%"></div>
-                        </div>
-                    </li>
+                                <li>
+                                    <span>React</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 40%"></div>
+                                    </div>
+                                </li>
 
-                    <li>
-                        <span>SQL</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 50%"></div>
+                                <li>
+                                    <span>Materialize</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 20%"></div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
+                    </div>
+                </div>
+            </section>
 
-                    <li>
-                        <span>PHP</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 40%"></div>
-                        </div>
-                    </li>
+            <section class="section parcours" id="parcours">
+                <div id="parcours">
+                    <h4>Parcours</h4>
+                    <section class="design-section">
+                        <div class="timeline">
+                            <div class="timeline-empty"></div>
+                            <div class="timeline-middle">
+                                <div class="timeline-circle"></div>
+                            </div>
+                            <div class="timeline-component timeline-content">
+                                <h5>2025 - 2028</h5>
+                                <h6>Alternance – CIMPA</h6>
+                            </div>
+                            <div class="timeline-component timeline-content">
+                                <h5>2025 - 2028</h5>
+                                <h6>MSc Pro Intelligence Artificielle – Epitech</h6>
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="timeline-circle"></div>
+                            </div>
+                            <div class="timeline-empty"></div>
 
-                    <li>
-                        <span>JavaScript</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 20%"></div>
-                        </div>
-                    </li>
+                            <div class="timeline-empty"></div>
 
-                    <li>
-                        <span>C / C++</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 10%"></div>
+                            <div class="timeline-middle">
+                                <div class="timeline-circle"></div>
+                            </div>
+                            <div class=" timeline-component timeline-content">
+                                <h5>2025</h5>
+                                <h6>Stage 2 mois Web - Wiifor</h6>
+                            </div>
+                            <div class="timeline-component timeline-content">
+                                <h5>2024 - 2025</h5>
+                                <h6>Formation Développement Web – ADRAR</h6>
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="timeline-circle"></div>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-                <h5>Frameworks & Librairies</h5>
-                <ul class="skills">
-                    <li>
-                        <span>Angular</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 60%"></div>
-                        </div>
-                    </li>
+                    </section>
+                </div>
+            </section>
+        </div>
 
-                    <li>
-                        <span>React</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 40%"></div>
-                        </div>
-                    </li>
 
-                    <li>
-                        <span>Materialize</span>
-                        <div class="bar">
-                            <div class="fill" style="width: 20%"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <div class="pagination-dots">
+            <label for="slider0" class="dot"></label>
+            <label for="slider1" class="dot"></label>
+            <label for="slider2" class="dot"></label>
+            <label for="slider3" class="dot"></label>
+            <label for="slider4" class="dot"></label>
+        </div>
     </div>
 
-    <div class="pagination-dots" id="dots">
-        <span data-index="0" class="dot active"></span>
-        <span data-index="1" class="dot"></span>
-        <span data-index="2" class="dot"></span>
-        <span data-index="3" class="dot"></span>
-        <span data-index="4" class="dot"></span>
-    </div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer=""></script>
     <script src="script.js" defer></script>
